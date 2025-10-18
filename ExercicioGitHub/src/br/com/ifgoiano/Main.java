@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         int opcao = 0;
 
@@ -30,11 +30,20 @@ public class Main {
                     System.out.print("Informe a Idade: ");
                     Scanner lsIdade = new Scanner(System.in);
                     idade = lsIdade.nextInt();
+                    System.out.println("****************************************************");
 
                     VerificadorVoto.podeVotar(idade);
                     break;
                 case 2:
-                    System.out.println("2");
+                    double lado;
+
+                    System.out.println("****************************************************");
+                    System.out.print("Informe o Lado do Quadrado: ");
+                    Scanner lsLado = new Scanner(System.in);
+                    lado = lsLado.nextDouble();
+                    System.out.println("****************************************************");
+
+                    CalculadoraGeometria.calcularAreaQuadrado(lado);
                     break;
                 case 3:
                     System.out.println("3");
