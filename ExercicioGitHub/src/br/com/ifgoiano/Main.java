@@ -57,7 +57,19 @@ public class Main {
                     ConversorTemperatura.celsiusParaFahrenheit(celsius);
                     break;
                 case 4:
-                    System.out.println("4");
+                    String primeiroNome, sobrenome;
+
+                    System.out.println("****************************************************");
+                    System.out.print("Informe o Primeiro Nome: ");
+                    Scanner lsPrimeiroNome = new Scanner(System.in);
+                    primeiroNome = lsPrimeiroNome.next();
+
+                    System.out.print("Informe o Sobre Nome: ");
+                    Scanner lsSobrenome = new Scanner(System.in);
+                    sobrenome = lsSobrenome.next();
+                    System.out.println("****************************************************");
+                                        
+                    FormatadorNome.montarNomeCompleto(primeiroNome, sobrenome);
                     break;
             }
 
