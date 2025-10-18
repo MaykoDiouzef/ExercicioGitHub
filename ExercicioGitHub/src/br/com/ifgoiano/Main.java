@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         int opcao = 0;
 
@@ -46,7 +46,15 @@ public class Main {
                     CalculadoraGeometria.calcularAreaQuadrado(lado);
                     break;
                 case 3:
-                    System.out.println("3");
+                    double celsius;
+
+                    System.out.println("****************************************************");
+                    System.out.print("Informe a Temperatura em Graus Celsius: ");
+                    Scanner lsCelsius = new Scanner(System.in);
+                    celsius = lsCelsius.nextDouble();
+                    System.out.println("****************************************************");
+
+                    ConversorTemperatura.celsiusParaFahrenheit(celsius);
                     break;
                 case 4:
                     System.out.println("4");

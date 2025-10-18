@@ -7,7 +7,7 @@ public class CalculadoraGeometria {
         double area;
         area = lado * lado;
 
-        System.err.println("Área do Quadrado: " + area);
+        System.out.println("Área do Quadrado: " + area);
         System.out.println("****************************************************");
     }
 
